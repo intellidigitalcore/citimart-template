@@ -1,0 +1,23 @@
+@import url(common.css);
+
+.products_intro h3{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 48px;
+    color: #B7B6B6;
+  }
+
+  @media screen and (max-width:1200px){
+    .products_intro h3{
+        font-size: 20px;
+    }
+  }
+  
+  
+  @media screen and (max-width:768px){
+    .products_intro h3{
+        font-size: 16px;
+    }
+}
