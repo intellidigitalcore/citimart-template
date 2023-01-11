@@ -830,7 +830,7 @@ header.custom_header {
 /*new category menu*/
 .all_department_menu {
   background: #fff;
-  padding: 15px 0;
+  /* padding: 15px 0; */
 }
 
 .all_department_menu_desktop {
@@ -847,6 +847,11 @@ header.custom_header {
 
 .all_department_menu .department_items ul li {
   list-style: none;
+}
+
+.all_department_menu .department_items> ul> li{
+  padding: 15px 0;
+
 }
 
 /* .all_department_menu .department_items ul li:last-child a {
