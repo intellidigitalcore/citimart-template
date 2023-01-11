@@ -22,8 +22,11 @@
     padding: 0px !important;
 }
 
+
+
 .banner_options ul li {
     list-style: none;
+    position: relative ;
 }
 
 .level_1_option>li {

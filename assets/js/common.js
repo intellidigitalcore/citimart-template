@@ -199,7 +199,7 @@ $(document).ready(function(){
     var href = "#desktop_header";
 
     $( 'html, body' ).animate({
-      scrollTop: $( href ).offset().top
+      scrollTop: $( href ).offset().top 
     }, '300' );
   
   }else{
@@ -208,17 +208,85 @@ $(document).ready(function(){
 
 });
 
-// Script for link with tab active ------------------------
-// ---------------------------------------------------------
+// Script for radio button of location modal 
+$(".radio_box_wrapper .location_radio:first-child label").addClass('active_radio');
+$(".location_radio label").click(function(){
+  $(".location_radio label").removeClass('active_radio');
+  $(this).addClass('active_radio');
+  
+  if($(".active_radio input").val() == "ouside_dhaka"){
+    $("#select_area").css({'visibility':'hidden'})
+  }else{
+    $("#select_area").css({'visibility':'visible'})
 
-// Cart counter 
+  }
+  
+}) ;
 
-// $(".cart_counter button:last-child").click(function(){
- 
-//  $price = parseInt($(this).parent().parent().find(".single_price").text());
-//  $quantity = parseInt($(this).parent().find("input").val());
 
-//  $total_price = $price*$quantity;
-// //  alert($total_price);
-//  $(this).parent().parent().find(".single_price").text($total_price);
-// });
+
+// Code for header search with suggetion started
+$(".search_with_suggetion input").keyup(function(){
+  $word = $(this).val().length;
+  if ($word  > 0){
+    $(".suggetion_box").addClass("fade_suggetion");
+    console.log("----");
+
+  }else{
+    $(".suggetion_box").removeClass("fade_suggetion");
+    console.log("Empty");
+  }
+});
+
+$(".suggetion_box").click(function(){
+  $(".nav-search").focus();
+});
+
+document.querySelector('.search_with_suggetion input').addEventListener('blur', function(){
+  $(".suggetion_box").removeClass("fade_suggetion");
+
+});
+// Code for header search with suggetion ended
+
+
+// Script for confirm order checkout action 
+const checkBox = $(".order_btn_wrapper input");
+const target = checkBox.parent().parent().find(".btn");
+target.addClass('disabled');
+
+
+checkBox.click(function(){
+  if(target.attr('class') == "btn btn-primary disabled"){
+    target.removeClass('disabled');
+  }else{
+    target.addClass('disabled');
+  }
+});
+
+
+// Code for activing cart bag with click ---- 
+$(".desktop_cart_btn").click(function(){
+ $(".desktop_cart_box .desktop_cart").toggleClass("active_cart_bag");
+ setTimeout(() => {
+  $("body").addClass("cart_open");
+ }, 100);
+})
+
+$('.desktop_cart').hover(function() {
+  $("body").removeClass("cart_open");
+}, function() {
+  $("body").addClass("cart_open");
+})
+
+$("body").click(function(){
+  if($("body").hasClass("cart_open")){
+
+    $(".desktop_cart").removeClass("active_cart_bag");
+    setTimeout(() => {
+      $("body").removeClass("cart_open");
+    }, 100);
+  }
+});
+
+// Code for activing cart bag with click ended ---- 
+
