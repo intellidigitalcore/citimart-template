@@ -1,0 +1,261 @@
+@import url(common.css);
+
+/* Addres card css from here  */
+.tab_heading {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 48px;
+  color: #dddddd;
+}
+
+.address_card {
+  padding: 17px 0px;
+  max-width: 480px;
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 27px;
+  padding: 20px 30px;
+  background-color: rgba(247, 247, 247, 1);
+}
+
+.address_heading h4 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 20px;
+  color: #c4c4c4;
+  margin-bottom: 20px;
+}
+.voucher_text {
+  font-size: 14px;
+}
+
+.address_card .map_text h3 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: #44444f;
+  margin-bottom: 5px;
+}
+
+.address_card .map_text p {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  color: #dedede;
+}
+.checkouted_products {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  color: #44444f;
+}
+
+.checkout_form h4 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  color: #44444f;
+  margin-bottom: 15px;
+}
+.checkout_form .form-group label {
+  cursor: pointer;
+}
+.checkout_form .form-group > div {
+  margin-bottom: 10px;
+  margin-left: 25px;
+  color: rgba(21, 20, 57, 0.4);
+}
+.checkout_form .form-group > div input {
+  padding: 0px 8px;
+  cursor: pointer;
+}
+
+.checkout_form small {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: var(--primary-color);
+  margin-left: 20px;
+}
+
+.checkout_form input[type="text"] {
+  max-width: 220px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  background: #f7f7f7;
+  border: none;
+}
+
+.checkout_product_wrapper .carted_item_name h3 {
+  max-width: 200px;
+  color: rgba(21, 20, 57, 0.4);
+}
+.checkout_product_wrapper .item_cross {
+  margin-left: 20px;
+}
+
+.checkout_product_wrapper .carted_items {
+  padding: 10px 0px;
+}
+.checkout_product_wrapper .carted_items:last-child {
+  border-bottom: 1px solid rgba(235, 235, 235, 1);
+}
+
+.checkout_product_wrapper .cart_counter,
+.checkout_product_wrapper .carted_item_name {
+  height: 75px;
+}
+
+.checkout_price h5 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #44444f;
+}
+
+.checkout_price {
+  margin-right: 33px;
+}
+.checkout_price .price_group div {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  line-height: 21px;
+  color: #dadada;
+}
+
+.checkout_product_wrapper {
+  max-height: 291px;
+  overflow-y: scroll;
+}
+
+.checkout_price .price_group {
+  width: 350px;
+  margin-bottom: 10px;
+}
+.item_cross {
+  margin-right: 10px;
+}
+.checkout_price .price_group .price {
+  color: var(--primary-color) !important;
+  margin-left: 5px;
+}
+.cart_hider {
+  padding: 10px 16px;
+  background: #f7f7f7;
+  border-radius: 10px;
+  margin: 15px 0px;
+}
+
+.cart_hider h4 {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #44444f;
+}
+.cart_hider a {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: var(--primary-color) !important;
+  text-decoration: none;
+}
+.cart_hider svg {
+  transform: rotate(-90deg);
+  transition: 0.5s;
+}
+.spin {
+  transform: rotate(90deg) !important;
+}
+.order_btn_wrapper {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 22px;
+  max-width: 405px;
+  width: 100%;
+}
+.order_btn_wrapper .btn-primary {
+  width: 100%;
+  margin-top: 24px;
+}
+.order_btn_wrapper p {
+  margin-top: -5px;
+}
+.order_btn_wrapper input {
+  width: 30px;
+  height: 15px;
+  border-radius: 5px;
+}
+.order_btn_wrapper .btn-primary.disabled {
+  background-color: rgba(184, 189, 201, 1);
+  border: rgba(184, 189, 201, 1);
+  cursor: e-resize;
+}
+@media screen and (max-width: 991px) {
+  .checkout_buttons a,
+  .cart_hider {
+    max-width: 450px;
+    width: 100%;
+    margin: auto;
+  }
+  .checkout_product_wrapper {
+    display: none;
+  }
+  .checkouted_products {
+    margin: 40px 0px;
+  }
+  .checkout_form h4 {
+    font-size: 16px;
+  }
+
+  .form-group div {
+    font-size: 14px;
+  }
+  .order_btn_wrapper {
+    max-width: 450px;
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .tab_heading {
+    font-size: 22px;
+  }
+  .address_heading h4 {
+    font-size: 16px;
+  }
+  .address_card .map_text h3 {
+    font-size: 14px;
+  }
+
+  .checkout_price h5 {
+    font-size: 12px;
+  }
+  .price {
+    font-size: 14px;
+  }
+}
