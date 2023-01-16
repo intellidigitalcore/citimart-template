@@ -59,7 +59,7 @@
     left: 100%;
     top: 20px;
     width: 100%;
-    height: 100%;
+    height: calc(100% + 1px);
     opacity: 0;
     visibility: hidden;
     background: white;
@@ -68,11 +68,11 @@
 .level_2_option>div{
     overflow-y: auto;
     height: 100%;
-    scrollbar-width: none;
+    /* scrollbar-width: none; */
 }
 .level_2_option>div::-webkit-scrollbar{
-    display: none;
-    width: 0;
+    /* display: none; */
+    width: 2px !important;
 }
 
 .level_3_option {
@@ -85,11 +85,11 @@
 
 /* custom scrollbar */
 .level_3_option::-webkit-scrollbar {
-    width: 4px;
+    width: 2px !important;
 }
 
 .level_3_option::-moz-scrollbar {
-    width: 4px;
+    width: 2px !important;
 }
 
 .level_3_option::-webkit-scrollbar-track {

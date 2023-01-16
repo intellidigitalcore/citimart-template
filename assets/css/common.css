@@ -2277,11 +2277,9 @@ button {
   white-space: normal;
 }
 .product_price .discount_price{
-  font-size: 14px;
-}
-.product_price .discount_price .product-card-discount-percentage{
   font-size: 12px;
 }
+
 
 .message_wrapper {
   max-width: 464px;
