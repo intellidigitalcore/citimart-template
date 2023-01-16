@@ -203,13 +203,22 @@
 
 /* Ordered item list css started  */
 #item_list{
-    max-width: 750px;
+    /* max-width: 750px; */
     width: 100%;
     
 }
 
 #item_list li{
     margin-bottom: 32px;
+}
+
+#item_list .ordered_item img{
+    flex-shrink: 0;
+}
+#item_list .item_title{
+    max-width: 700px;
+    min-width: 120px;
+    width: 100%;
 }
 
 #item_list .no{
@@ -244,6 +253,12 @@
     font-size: 20px;
     line-height: 30px;
     color: #787E8D;
+}
+#item_list .quantity{
+    min-width: 80px;
+}
+#item_list .price{
+    min-width: 60px;
 }
 
 #item_list .total_price {
@@ -406,6 +421,7 @@
         /* Order item responsive  */
         #item_list h3 {
             font-size: 12px;
+            line-height: 18px;
         }
         #item_list .quantity, #item_list .price{
             font-size: 12px;

@@ -652,9 +652,9 @@ header.custom_header {
   scrollbar-width: thin;
 }
 
-.desktop_cart_content .carted_items:last-child {
+/* .desktop_cart_content .carted_items:last-child {
   margin-bottom: 45px;
-}
+} */
 
 /* Css for empty cart content  */
 .empty_cart_content {
@@ -1119,6 +1119,7 @@ ul.nav_mega_sub_items {
   position: fixed;
   left: 0px;
   top: 0px;
+  height: 60px;
 }
 
 .mobile_top_bar {
@@ -1153,7 +1154,7 @@ ul.nav_mega_sub_items {
 
 .mobile_favourite .mob_fav_items {
   /* margin-bottom: 120px; */
-  height: calc(100vh - 154px);
+  height: calc(100vh - 180px);
   overflow-y: auto;
   scrollbar-width: none;
 }
@@ -1180,6 +1181,9 @@ ul.nav_mega_sub_items {
   background-color: white;
   /* overflow: scroll; */
   overflow-y: auto;
+}
+.mobile_cart{
+  height: calc(100vh - 200px);
 }
 
 /* .mobile_menu_content .container {
@@ -1646,7 +1650,7 @@ a.resend_code {
 }
 
 .footer_contact_option a {
-  font-weight: 600;
+  font-weight: 500;
   font-size: 16px;
   line-height: 24px;
 }
@@ -1983,9 +1987,9 @@ a.resend_code {
   padding-bottom: 0px;
 }
 
-.mobile_cart .carted_items:last-child {
+/* .mobile_cart .carted_items:last-child {
   margin-bottom: 170px;
-}
+} */
 
 .mobile_cart .carted_items {
   min-height: 120px;
@@ -2025,7 +2029,7 @@ a.resend_code {
   box-shadow: 0px -4px 40px rgba(0, 0, 0, 0.15);
   position: fixed;
   width: 100%;
-  bottom: calc(0% + 62px);
+  bottom: calc(0% + 60px);
   display: flex;
   width: 100%;
   flex-direction: row-reverse;
@@ -2228,6 +2232,14 @@ button {
   cursor: pointer;
 }
 
+.square_product .product_details p span.product-card-price-previous {
+  text-decoration: line-through;
+  color: #979797;
+}
+.square_product .product_details p span.product-card-discount-percentage {
+  color: red;
+}
+
 .product_details_page {
   margin-top: 200px;
 }
@@ -2247,6 +2259,10 @@ button {
   font-size: 14px;
   line-height: 18px;
   color: #979797;
+  width: 100%;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 .product_price p {
@@ -2257,6 +2273,14 @@ button {
   line-height: 20px;
   color: #44444f;
   margin-top: 12px;
+  overflow: visible;
+  white-space: normal;
+}
+.product_price .discount_price{
+  font-size: 14px;
+}
+.product_price .discount_price .product-card-discount-percentage{
+  font-size: 12px;
 }
 
 .message_wrapper {
@@ -2700,7 +2724,7 @@ button {
 
 @media screen and (max-width: 1199px) {
   #page_content {
-    margin-top: 63px;
+    margin-top: 60px;
   }
 
   #desktop_header {
@@ -2930,6 +2954,10 @@ button {
 
   .banner1_content h3 {
     font-size: 32px;
+  }
+  .service_hr{
+    margin-left: 50%;
+    transform: translateX(-50%);
   }
 }
 
