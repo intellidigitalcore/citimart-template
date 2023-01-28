@@ -124,6 +124,13 @@ $(".add_btn").click(function(){
    
     $update_val = $current_val + 1;
     $(this).parent().parent().parent().find("input").val($update_val);
+
+    if($current_val >= 5){
+      $('.stock_limit_tooltip').css({'display': 'block'});
+      setTimeout(() => {
+        $('.stock_limit_tooltip').css({'display': 'none'});
+      }, 10000);
+    }
 });
 
 $(".remove_btn").click(function(){

@@ -1594,6 +1594,7 @@ a.resend_code {
 
 #footer {
   background-color: #373f50;
+  padding-top: 50px;
 }
 
 @media screen and (max-width: 1199px) {
@@ -1810,6 +1811,17 @@ a.resend_code {
 
   .find_store p {
     font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .footer_logo{
+    margin-bottom: 40px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .location_flinder{
+    margin-bottom: 40px;
   }
 }
 
@@ -2159,6 +2171,34 @@ button {
   border-radius: 8px;
   border: none;
   min-height: 35px;
+}
+.offer_btn_wrapper{
+  position: relative;
+}
+.stock_limit_tooltip{
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #474c5a ;
+  border-radius: 4px;
+  font-size: 12px;
+  color: white;
+  white-space: nowrap;
+  padding: 2px 4px;
+  margin-bottom: 8px;
+  z-index: 20;
+  display: none;
+}
+.stock_limit_tooltip::after{
+  content: '';
+  height: 8px;
+  width: 8px;
+  background: #474c5a;
+  position: absolute;
+  bottom: -4px;
+  right: 22px;
+  transform: rotate(45deg);
 }
 
 .status_text {
