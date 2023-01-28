@@ -125,11 +125,12 @@ $(".add_btn").click(function(){
     $update_val = $current_val + 1;
     $(this).parent().parent().parent().find("input").val($update_val);
 
-    if($current_val >= 5){
+    if($update_val >= 5){
       $('.stock_limit_tooltip').css({'display': 'block'});
       setTimeout(() => {
         $('.stock_limit_tooltip').css({'display': 'none'});
-      }, 10000);
+      }, 4000);
+      $(this).attr('disabled','true');
     }
 });
 
@@ -142,6 +143,9 @@ $(".remove_btn").click(function(){
     if($update_val < 1){
         $(this).parent().parent().parent().find(".counter_btn").css({"display":"none"});
         $(this).parent().parent().parent().find(".static_btn").css({"display":"block"});
+    }
+    if($update_val < 5){
+      $(this).parent().find('.add_btn').removeAttr('disabled');
     }
 });
 

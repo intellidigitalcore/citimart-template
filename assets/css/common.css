@@ -2172,6 +2172,9 @@ button {
   border: none;
   min-height: 35px;
 }
+.add_to_bag:disabled{
+  opacity: 0.5;
+}
 .offer_btn_wrapper{
   position: relative;
 }
@@ -2189,6 +2192,7 @@ button {
   margin-bottom: 8px;
   z-index: 20;
   display: none;
+  opacity: 0.6;
 }
 .stock_limit_tooltip::after{
   content: '';
