@@ -2251,7 +2251,6 @@ button {
   color: var(--primary-color);
   font-size: 18px;
   width: 50%;
-  height: 35px;
 }
 
 .counter_btn .add_to_bag:last-child {
