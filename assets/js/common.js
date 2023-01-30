@@ -126,7 +126,7 @@ $(".add_btn").click(function(){
     $(this).parent().parent().parent().find("input").val($update_val);
 
     if($update_val >= 5){
-      $('.stock_limit_tooltip').css({'display': 'block'});
+      $(this).parent().parent().parent().find('.stock_limit_tooltip').css({'display': 'block'});
       setTimeout(() => {
         $('.stock_limit_tooltip').css({'display': 'none'});
       }, 4000);
