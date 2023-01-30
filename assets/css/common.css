@@ -2171,6 +2171,7 @@ button {
   border-radius: 8px;
   border: none;
   min-height: 35px;
+  line-height: 35px;
 }
 .add_to_bag:disabled{
   opacity: 0.5;
@@ -2236,6 +2237,7 @@ button {
   margin: auto;
   display: none;
   min-height: 30px;
+  max-height: 35px;
 }
 
 .counter_btn .add_to_bag:first-child {
@@ -2249,6 +2251,7 @@ button {
   color: var(--primary-color);
   font-size: 18px;
   width: 50%;
+  height: 35px;
 }
 
 .counter_btn .add_to_bag:last-child {
